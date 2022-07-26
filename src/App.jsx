@@ -4,6 +4,10 @@ import Layout from './components/Layout'
 import Navbar from './components/Navbar'
 import Title from './components/Title'
 
+// Import components
+import Header from './components/templates/header'
+import Footer from './components/templates/footer'
+
 class App extends Component {
   state = {
     productos: [
@@ -43,9 +47,10 @@ class App extends Component {
 
   render() {
     const { esCarroVisible } = this.state
-    
+
     return (
       <div>
+        <Header />
         <Navbar
           carro={this.state.carro}
           esCarroVisible={esCarroVisible}
@@ -58,6 +63,7 @@ class App extends Component {
             productos={this.state.productos}
           />
         </Layout>
+        <Footer />
       </div>
     )
   }
