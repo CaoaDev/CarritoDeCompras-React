@@ -1,4 +1,45 @@
 .header {
-  background-color: #54C8CD;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #27282D;
   color: white;
+  height: 3rem;
+  padding: 0 1rem;
+}
+
+.lista {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  column-gap: 2rem;
+}
+
+.lista li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.lista li:hover {
+  color: #009B3D;
+}
+
+.secondBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.secondBox p {
+  color: #FFF0F0;
+}
+
+.session {
+  background-color: #3281C3;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  position: relative;
 }
